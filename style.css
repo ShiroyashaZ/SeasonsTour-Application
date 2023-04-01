@@ -42,12 +42,6 @@
     padding: 5px;
   }
   */
-  @media only screen and (max-width: 480px) {
-    .logo {
-      width: 78vw;
-    }
-  }
-
   * {
     margin: 0;
     padding: 0;
@@ -69,10 +63,36 @@
     justify-content: center;
   }
 
-  .logo {
-    width: 25vw;
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('SeasonsTour2.jpg');
     background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+/*  
+  .logo {
+    width: 70vw;
+    background-position: top;
+    margin-top: 10%;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    .logo {
+      margin-top: 85%;
+    }
+  }
+*/
+
+.logo {
+  background-position: top;
+  margin-top: 30%;
+  width: 75vw;
+}
 
   .header-content{
     margin-bottom: 150px;
@@ -80,12 +100,12 @@
   }
 
   .header-content h1 {
-    font-size: 4vmin;
+    font-size: 5vmin;
   }
 
   .line {
-    width: 150px;
-    height: 4px;
+    width: 30vmin;
+    height: 1vmin;
     background: crimson;
     margin: 10px auto;
     border-radius: 5px;
@@ -97,5 +117,18 @@
 }
 
 .toto {
-  width: 25vw;
+  width: 75vw;
+}
+
+@media only screen and (min-width: 700px) {
+  .logo {
+    margin-top: 45%;
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .toto {
+    width: 35vw;
+  }
 }
